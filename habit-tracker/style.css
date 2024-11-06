@@ -1,0 +1,120 @@
+/* CSS untuk Habit Tracker App */
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Kontainer utama */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tautan dan tombol */
+a, button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5c7cfa;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+a:hover, button:hover {
+    background-color: #4a6de0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/* Formulir */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Daftar kebiasaan */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-actions a {
+    margin-left: 10px;
+    font-size: 0.85rem;
+}
+
+/* Status selesai */
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+}
